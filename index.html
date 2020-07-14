@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+<div class="wrap">
     <div class="js-clock">
         <h1 class="js-title">00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" name="" id="" placeholder="your name?">
+    <form class="js-form name-form">
+        <input type="text" placeholder="your name?">
     </form>
 
     <h4 class="js-greetings greeting"></h4>
 
-    <form action="" class="js-toDoForm">
+    <form class="js-toDoForm todo-form">
         <input type="text" placeholder="Write a to do">
-
     </form>
 
-    <ul class="js-toDoList">
-    </ul>
-    <span class="js-weather"></span>
+    <ul class="js-toDoList todo-list"></ul>
+
+    <span class="js-weather weather"></span>
+
+</div>
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

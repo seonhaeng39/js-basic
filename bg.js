@@ -1,13 +1,14 @@
-const body = document.querySelector("body");
+const wrap = document.querySelector(".wrap");
 
 const IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
-    const image = new Image();
-    image.src = `./images/bg${imgNumber + 1}.jpg`;    
-    image.className = "bg";
-    body.appendChild(image);
-
+    // const image = new Image();
+    // image.src = `./images/bg${imgNumber + 1}.jpg`;    
+    //image.className = "bg";
+    //wrap.appendChild(image);
+    
+    wrap.style.background = `url(./images/bg${imgNumber + 1}.jpg) no-repeat center center`;    
 }
 
 function genRendom(){
